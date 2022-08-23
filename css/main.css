@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML SALE */
+
+/* propiedades de los hijos */
+
+header{
+    background-color: rgb(244, 42, 42);
+    grid-area: header;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+
+}
+
+section {
+    background-color: white;
+    grid-area: section-uno;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-dos {
+    background-color: white;
+    grid-area: section-dos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: gray;
+    grid-area: footer; 
+}
+
+/* Propiedades del padre */
+
+.contenedor { 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr ;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section-uno section-dos"
+    "footer footer" ;
+
+}
+
+main img { 
+    width: 100%; 
+}
+
+section img {
+    width: 70% ;
+}
+
+/* estilo del header sale */
+
+.titulo_sale {
+    background-color:#f63232 ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.footer_sale{
+    background-color:#1a1a1a ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10 px;
+    text-align: center;
+    color: rgb(244, 241, 241);
+
+}
+
+/* estilo de html prodcutos */
+.titulo_productos {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+    
+}
+.productos {
+    width: 100%;
+
+}
+
+/* Estilo boto regresar a inicio */
+
+ .backhome {
+    color: black;
+    font-size: 20px;
+    
+
+ }
