@@ -1,0 +1,42 @@
+// incoporar los arcivos al principal
+
+
+@import "base/variables";
+@import "base/mapas";
+@import "base/listas";
+
+.menu {
+    color: $color-principal;
+};
+
+header {
+    width: $medida-principal;
+    color: $color-principal;
+};
+
+// codigo de mapas - botones
+
+main{
+    width: $medida-principal*2;
+    color: $color-secundario;
+    .boton-standard { background-color: map-get($map: $standard, $key:bg-standard );
+    color: map-get($map: $standard, $key: bg-standard );
+    }
+
+    //listas
+h2{
+    color: nth ($colores, 3);
+}
+    
+div {
+    @include medidas( 400px, 300px,
+    );
+}
+};
+
+footer {
+    width: $medida-secundaria;
+    color: black;
+
+
+};
